@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Imersão Dev - aula 02</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
+            alt="Logo">
+        <div class="logo">
+        </div>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <div class="calculadora">
+        <h1 class="page-title">Calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+            <tr>
+                <td><button class="keyboard" onclick="clean()">C</button></td>
+                <td><button class="keyboard" onclick="back()"><</button></td>
+                <td><button class="keyboard" onclick="insert('/')">/</button></td>
+                <td><button class="keyboard" onclick="insert('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="keyboard" onclick="insert('7')">7</button></td>
+                <td><button class="keyboard" onclick="insert('8')">8</button></td>
+                <td><button class="keyboard" onclick="insert('9')">9</button></td>
+                <td><button class="keyboard" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="keyboard" onclick="insert('4')">4</button></td>
+                <td><button class="keyboard" onclick="insert('5')">5</button></td>
+                <td><button class="keyboard" onclick="insert('6')">6</button></td>
+                <td><button class="keyboard" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="keyboard" onclick="insert('1')">1</button></td>
+                <td><button class="keyboard" onclick="insert('2')">2</button></td>
+                <td><button class="keyboard" onclick="insert('3')">3</button></td>
+                <td rowspan="2"><button class="keyboard" style="height: 106px;" onclick="calculate()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="keyboard" style="width: 106px;" onclick="insert('0')">0</button></td>
+                <td><button class="keyboard" onclick="insert('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>&copy; imersão dev 2021 | Alura</footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
